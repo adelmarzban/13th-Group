@@ -18,8 +18,8 @@ for i in range (len(toBe)):
     countToBe += chtxt.count(toBe[i])
 print("The count of to be verbs= ",countToBe)
 
-chtxt.replace(".","")
 
-unique=set(chtxt.replace(".","").split())
-print(unique)
-print(len(unique))
+uniqueWords=set(chtxt.replace(".","").split())
+uniqueWords=set(chtxt.replace(",","").split())
+#print(uniqueWords)
+print("The count of unique words=" ,len(uniqueWords))
