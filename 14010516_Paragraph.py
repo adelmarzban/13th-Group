@@ -12,7 +12,7 @@ chtxt = txt.lower()
 
 print("The count of words= ", len(chtxt.split()))
 
-toBe = [" am "," is "," are "," was "," were ", " been ", " beeing "]
+toBe = [" am "," is "," are "," was "," were ", " been ", " being "]
 countToBe = 0
 for i in range (len(toBe)):
     countToBe += chtxt.count(toBe[i])
@@ -23,3 +23,11 @@ uniqueWords=set(chtxt.replace(".","").split())
 uniqueWords=set(chtxt.replace(",","").split())
 #print(uniqueWords)
 print("The count of unique words=" ,len(uniqueWords))
+
+print("the count of 'am' = ", chtxt.count(" am "))
+print("the count of 'is' = ", chtxt.count(" is "))
+print("the count of 'are' = ", chtxt.count(" are "))
+print("the count of 'was' = ", chtxt.count(" was "))
+print("the count of 'were' = ", chtxt.count(" were "))
+print("the count of 'been' = ", chtxt.count(" been "))
+print("the count of 'being' = ", chtxt.count(" being "))
