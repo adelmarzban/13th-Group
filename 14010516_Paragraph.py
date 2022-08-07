@@ -19,8 +19,8 @@ for i in range(len(toBe)):
 print("The count of to be verbs= ", countToBe)
 
 uniqueWords = chtxt.replace(".", "")
-uniqueWords = set(chtxt.replace(",", "").split())
-#print(uniqueWords)
+uniqueWords = set(uniqueWords.replace(",", "").split())
+print(uniqueWords)
 print('The count of unique words=', len(uniqueWords))
 
 print("the count of 'am' = ", chtxt.count(" am "))
