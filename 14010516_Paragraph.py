@@ -10,12 +10,16 @@ Sometimes circus shows and magic shows entertain the city people.
 ###chtxt is created to make paragraph in lower case to be ready to check###
 chtxt = txt.lower()
 
-print("Count of words= ", len(chtxt.split()))
+print("The count of words= ", len(chtxt.split()))
 
-toBe = [" am "," is "," are "," was "," were "]
-
+toBe = [" am "," is "," are "," was "," were ", " been ", " beeing "]
 countToBe = 0
-for i in range (1,len(toBe)):
+for i in range (len(toBe)):
     countToBe += chtxt.count(toBe[i])
+print("The count of to be verbs= ",countToBe)
 
-print(countToBe)
+chtxt.replace(".","")
+
+unique=set(chtxt.replace(".","").split())
+print(unique)
+print(len(unique))
