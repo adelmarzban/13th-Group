@@ -1,5 +1,5 @@
 ###txt is the paragraph we want to check###
-## txt is copined form a colleague python file##
+## txt is copied form a colleague python file##
 txt = """
 City life is full of fun. There are parks and picnic spots to visit. We have cinema halls to see movies.
 We have electricity which runs our factories, light and cools our home and helps us in seeing T.V.
@@ -12,17 +12,16 @@ chtxt = txt.lower()
 
 print("The count of words= ", len(chtxt.split()))
 
-toBe = [" am "," is "," are "," was "," were ", " been ", " being "]
+toBe = [" am ", " is ", " are ", " was ", " were ", " been ", " being "]
 countToBe = 0
-for i in range (len(toBe)):
+for i in range(len(toBe)):
     countToBe += chtxt.count(toBe[i])
-print("The count of to be verbs= ",countToBe)
+print("The count of to be verbs= ", countToBe)
 
-
-uniqueWords=set(chtxt.replace(".","").split())
-uniqueWords=set(chtxt.replace(",","").split())
+uniqueWords = chtxt.replace(".", "")
+uniqueWords = set(chtxt.replace(",", "").split())
 #print(uniqueWords)
-print("The count of unique words=" ,len(uniqueWords))
+print('The count of unique words=', len(uniqueWords))
 
 print("the count of 'am' = ", chtxt.count(" am "))
 print("the count of 'is' = ", chtxt.count(" is "))
