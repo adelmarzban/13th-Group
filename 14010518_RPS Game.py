@@ -5,15 +5,15 @@ player = 0
 pc = 0
 
 opt = ["Rock", "Paper", "Scissor"]
-no_turn= int(input("please insert your desired turn number="))
+no_turn= int(float(input("please insert your desired turn number=")))
 while i < no_turn:
-    player_choice= int(input(""" Rock =0, Paper = 1, Scissor=2
-                                    chose an option:""" ))
+    player_choice= int(float(input(""" Rock =0, Paper = 1, Scissor=2
+                                    chose an option:""" )))
     if player_choice > 2:
         print("insert a number less than 3")
     while player_choice > 2:
-        player_choice = int(input(""" Rock =0, Paper = 1, Scissor=2
-                                        chose a new option:"""))
+        player_choice = int(float(input(""" Rock =0, Paper = 1, Scissor=2
+                                        chose a new option:""")))
 
     player_choice= opt[player_choice]
 
