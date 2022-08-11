@@ -8,7 +8,7 @@ pc = 0
 # the list of option that player or pc can select them#
 opt = ["Rock", "Paper", "Scissor"]
 
-# insurance that player enter a valid value#
+# Making ensure that player enter a valid value#
 try:
     no_turn = int(float(input("please insert your desired turn number=")))
 except:
